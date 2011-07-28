@@ -1,0 +1,17 @@
+# OASIS_START
+# DO NOT EDIT (digest: dd5b0838042e1c58c710dff0605ebee0)
+# Library wikicreole
+"lib": include
+<lib/wikicreole.{cma,cmxa}>: oasis_library_wikicreole_byte
+<lib/*.ml{,i}>: oasis_library_wikicreole_byte
+<lib/wikicreole.{cma,cmxa}>: oasis_library_wikicreole_native
+<lib/*.ml{,i}>: oasis_library_wikicreole_native
+<lib/*.ml{,i}>: pkg_threads
+<lib/*.ml{,i}>: pkg_ocsigenserver
+<lib/*.ml{,i}>: pkg_lwt.syntax
+<lib/*.ml{,i}>: pkg_lwt
+<lib/*.ml{,i}>: pkg_eliom.server
+<lib/*.ml{,i}>: pkg_eliom
+<lib/*.ml{,i}>: pkg_camlp4
+# OASIS_STOP
+<lib/wiki_syntax.ml{,i}>: syntax_camlp4o

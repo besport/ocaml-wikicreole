@@ -1,0 +1,10 @@
+# OASIS_START
+# DO NOT EDIT (digest: 854b4d3e704fb2a74b83744445be10d1)
+version = "0.0.1"
+description = "wikicreole engine (taken from ocsimore)"
+requires = "camlp4 lwt.syntax lwt threads ocsigenserver eliom eliom.server"
+archive(byte) = "wikicreole.cma"
+archive(native) = "wikicreole.cmxa"
+exists_if = "wikicreole.cma"
+# OASIS_STOP
+

@@ -1,0 +1,21 @@
+OASISFormat: 0.1
+Name: ocaml-wikicreole
+Version: 0.0.1
+LicenseFile: COPYING
+License: PROP
+Authors: 
+BuildTools: ocamlbuild
+Plugins: DevFiles (0.2), META (0.2)
+Synopsis: wikicreole engine (taken from ocsimore)
+
+Flag server
+  Description: server 
+  Default: true
+
+Library "wikicreole"
+  Install$: true
+  Path: lib
+  ByteOpt: -thread
+  NativeOpt: -thread   
+  Modules: Opaque, Wikicreole, Wiki_syntax
+  BuildDepends: camlp4, lwt.syntax, lwt, threads, ocsigenserver, eliom, eliom.server
