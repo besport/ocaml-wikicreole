@@ -17,5 +17,5 @@ Library "wikicreole"
   Path: lib
   ByteOpt: -thread
   NativeOpt: -thread   
-  Modules: Opaque, Wikicreole, Wiki_syntax
+  Modules: Opaque, Xform, Wiki_types, Wiki_self_services, Wiki_models, Wiki_widgets_interface, Wikicreole, Wiki_syntax
   BuildDepends: camlp4, lwt.syntax, lwt, threads, ocsigenserver, eliom, eliom.server
